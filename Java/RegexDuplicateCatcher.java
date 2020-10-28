@@ -6,7 +6,7 @@ public class RegexDuplicateCatcher {
 
   public static void main(String[] args) {
 
-    String regex = "(\\b\\w+\\b)(\\s+\\1\\b)";
+    String regex = "(\\b\\w+\\b)(\\s+\\1\\b)+";
     Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
 
     Scanner in = new Scanner(System.in);
